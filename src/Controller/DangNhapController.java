@@ -29,7 +29,7 @@ public class DangNhapController {
     public boolean isExistedAccount(String user, String password) throws IOException, SQLException {
         st = null;
         rs = null;
-        sqlCommand = "SELECT * FROM hotel.user WHERE User_Name = '" + user + "' "
+        sqlCommand = "SELECT * FROM hotel_database.user WHERE User_Name = '" + user + "' "
                 + "AND Pass_Word = '" + password + "'" ;
         try {
             st = myConn.getConnection().createStatement();

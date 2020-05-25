@@ -23,7 +23,7 @@ public class ConnectDB {
     public Connection getConnection() throws IOException{
         Connection conn;
         className = "com.mysql.cj.jdbc.Driver";
-        url = "jdbc:mysql://localhost:3306/hotel";
+        url = "jdbc:mysql://localhost:3306/hotel_database";
         user = "root";
         password = "1234";
         try {
